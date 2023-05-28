@@ -1,0 +1,27 @@
+<mat-grid-list cols="1" rows="1" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-card>
+            <div class="back">
+                <mat-icon class="icon" (click)="goBack()">arrow_back</mat-icon>
+            </div>
+            <h2>Connexion</h2>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Adresse email</mat-label>
+                    <input matInput [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Mot de passe</mat-label>
+                    <input matInput [formControl]="password" required>
+                    <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </p>
+            <div>
+                <button class="connect" mat-stroked-button (click)="connect()">Se connecter</button>
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

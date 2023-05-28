@@ -1,0 +1,59 @@
+
+
+.item:hover {
+    background-color: gray;
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+    margin: 9px;
+    border: 5px;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+.delete {
+    border: 30px;
+    border-color: red;
+}
+
+.body {
+    width: 320px;
+    padding-top: 0%;
+}
+
+.icon {
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+.buttons h1, .buttons .icon {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,39 @@
+mat-list-item:hover {
+    background-color: gray;
+    border-radius: 30px;
+}
+
+mat-list-item {
+    margin-top: 20px;
+}
+
+mat-nav-list {
+    width: 200px;
+    padding-top: 0%;
+}
+
+.search {
+    position: fixed;
+    width: 200px;
+    overflow-x: hidden;
+}
+
+.list {
+    top: 52px;
+    overflow: auto;
+    position: relative;
+    height: 90vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

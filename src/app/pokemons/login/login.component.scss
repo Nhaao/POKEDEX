@@ -1,0 +1,23 @@
+mat-card {
+    width: 45%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.back {
+    width: 100%;
+    text-align: left;
+}
+
+.connect, mat-form-field {
+    width: 80%;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}

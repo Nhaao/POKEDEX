@@ -1,0 +1,40 @@
+img {
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+}
+
+.right {
+    float: right;
+    margin-right: 20px;
+}
+
+
+mat-card {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.desc {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.image {
+    text-align: center;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+.disable {
+    color: darkgray;
+    cursor: not-allowed;
+}

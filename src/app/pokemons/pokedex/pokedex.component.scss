@@ -1,0 +1,22 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+.login {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    float: right;
+    margin: 40px;
+}
+
+.icon {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}
+

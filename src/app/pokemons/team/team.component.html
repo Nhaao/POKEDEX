@@ -1,0 +1,19 @@
+
+<div class="body">
+
+    <mat-card class="buttons">
+        <mat-icon class="icon" (click)="logOut()">logout</mat-icon>  
+
+        <h1>Votre équipe</h1>
+    </mat-card>
+
+    <div class="list">
+        <mat-card [ngClass]="{'delete': removeToggle == true}" class="item" *ngFor="let pokemon of teamList" routerLink="/pokemon/{{ pokemon.id }}">
+            <img class="img" matListAvatar src="../assets/img/official-artwork/{{ pokemon.id }}.png" alt="...">  
+            <h3 matLine>
+                <span>{{ pokemon.name }} </span>
+            </h3>
+        </mat-card>
+    </div>
+</div>
+  

@@ -1,0 +1,18 @@
+
+<mat-nav-list>
+  <div class="search">
+    <mat-form-field appearance="fill">
+      <mat-label>Rechercher</mat-label>
+      <input matInput #searchBox id="search-box" (input)="search(searchBox.value)">
+    </mat-form-field>
+  </div>
+  <div class="list" [scrollWindow]="false" infinite-scroll (scrolled)="onScroll()">
+    <mat-list-item class="item" *ngFor="let pokemon of pokemonsDisplayed" routerLink="/pokemon/{{ pokemon.id }}">
+      <img matListAvatar src="../assets/img/sprites/{{ pokemon.id }}.png" alt="...">
+      <h3 matLine>
+        <span> {{ pokemon.id }}</span>
+        <span>. {{ pokemon.name }} </span>
+      </h3>
+    </mat-list-item>
+  </div>
+</mat-nav-list>
